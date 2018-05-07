@@ -6,7 +6,7 @@ title: Le Wagon - Middleman - About
   <div class="about-content">
     <h1>This template was built with <i class="fa fa-heart"></i> by</h1>
     <ul class="list-inline">
-      <% data.partner_in_crime.each do |user| %>
+
         <li>
           <% link_to "https://kitt.lewagon.com/alumni/#{user.github_nickname}", target: "_blank" do %>
             <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{user.github_nickname}", class: "img-circle" %>
@@ -18,7 +18,18 @@ title: Le Wagon - Middleman - About
             <% end %>
           </p>
         </li>
-      <% end %>
+        <li>
+          <% link_to "https://kitt.lewagon.com/alumni/mdemorel", target: "_blank" do %>
+            <%= image_tag "https://www.google.fr/imgres?imgurl=http%3A%2F%2Fresize3-doctissimo.ladmedia.fr%2Fr%2F1010%2C%2Cforcex%2Fimg%2Fvar%2Fdoctissimo%2Fstorage%2Fimages%2Ffr%2Fwww%2Fnutrition%2Fdiaporamas%2Fles-aliments-riches-en-proteines%2Fle-jambon-cuit%2F2117927-1-fre-FR%2FLe-jambon-cuit.jpg&imgrefurl=http%3A%2F%2Fwww.doctissimo.fr%2Fnutrition%2Fdiaporamas%2Fles-aliments-riches-en-proteines%2Fle-jambon-cuit&docid=eEdJi6mfeZ7gzM&tbnid=fDumnrMCHgt2rM%3A&vet=10ahUKEwioqLew2fPaAhWJPhQKHa9iAGUQMwg6KAUwBQ..i&w=1010&h=655&bih=738&biw=1440&q=jambon&ved=0ahUKEwioqLew2fPaAhWJPhQKHa9iAGUQMwg6KAUwBQ&iact=mrc&uact=8", class: "img-circle" %>
+          <% end %>
+          <h2><%= user.name %></h2>
+          <p>
+            <% link_to "https://github.com/#{user.github_nickname}", target: "_blank" do %>
+              <i class="fa fa-github"></i> <%= user.github_nickname %>
+            <% end %>
+          </p>
+        </li>
+
     </ul>
   </div>
 </div>
