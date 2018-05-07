@@ -1,17 +1,45 @@
-#home {
-  background-color: #D23333;
+.banner {
   color: white;
-  height: 100vh;
+  text-align: center;
+  height: calc(100vh - 70px);
+  /* if you have a 70px navbar => height: calc(100vh - 70px); */
+  background-size: cover !important;
   display: flex;
   align-items: center;
-  justify-content: space-around;
+  justify-content: center;
+}
+.banner h1 {
+  font-size: 50px;
+  font-weight: bold;
+  text-shadow: 0px 1px rgba(0, 0, 0, 0.2);
+}
+.banner p {
+  font-size: 25px;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+  opacity: 0.6;
+  margin-bottom: 30px;
+}
+
+.home-content {
+  background: white;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.container h2 {
   text-align: center;
-  p {
-    margin-top: 1.5em;
-  }
-  a {
-    color: rgba(0,0,0,0.4);
-    font-weight: bold;
-    font-size: 16px;
-  }
+}
+
+.form-control, select  {
+  color: darkgrey;
+  height: 50px;
+}
+
+input.btn.btn-primary {
+  height: 50px;
+  width: 100px;
+  border-radius: 2px;
 }
